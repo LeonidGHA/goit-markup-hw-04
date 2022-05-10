@@ -329,11 +329,23 @@ ul {
     background-color: var(--secondary-bcg-color);
 }
 
+.footer-thumb {
+    display: flex;
+}
+
+.adress-thumb {
+    display: block;
+    margin-top: 60px;
+    margin-bottom: 60px;
+    margin-left: 0;
+    margin-right: 0;
+}
+
 .footer .logo {
     color: var(--primary-bcg-color);
 
     display: inline-block;
-    margin-top: 60px;
+    margin-top: 0;
     margin-bottom: 20px;
 }
 
@@ -357,6 +369,18 @@ ul {
     line-height: 1.71;
 
     margin-top: 9px;
+}
+
+.join-thumb {
+    display: flex;
+    align-items: center;
+}
+
+.join-title {
+    color: var(--primary-bcg-color);
+    font-weight: 700;
+    line-height: 1.14;
+    text-transform: uppercase;
 }
 
 /* Main portfolio.html */
