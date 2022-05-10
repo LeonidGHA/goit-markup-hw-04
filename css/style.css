@@ -4,6 +4,7 @@
 /* основной цвет фона background: #FFFFFF; */
 /* вторичный цвет фона footer main  background: #2F303A; */
 /* третичный цвет фона background: #F5F4FA; */
+/* заливка иконок #AFB1B8; */
 
 :root {
     --primary-text-color: #757575;
@@ -13,6 +14,7 @@
     --primary-bcg-color: #FFFFFF;
     --secondary-bcg-color: #2F303A;
     --tertiary-bck-color: #F5F4FA;
+    --icon-fill-color: #AFB1B8;
 }
 
 body {
@@ -165,15 +167,12 @@ ul {
 .hero {
     display: flex;
     flex-direction: column;
-    padding-top: 200px;
-    
 
     background-color: var(--secondary-bcg-color);
     text-align: center;
     
-
     max-width: 1600px;
-    height: 600px;
+    max-height: 600px;
     margin-left: auto;
     margin-right: auto;
     background-image: url(../images/hero-bgc.jpg);
@@ -183,7 +182,7 @@ ul {
     }
 
 .hero-title {
-    margin-top: 0px;
+    margin-top: 200px;
     margin-bottom: 30px;
     margin-left: auto;
     margin-right: auto;
@@ -202,6 +201,8 @@ ul {
     display: flex;
     align-items: center;
     text-align: center;
+    margin-top: 0px;
+    margin-bottom: 200px;
     margin-left: auto;
     margin-right: auto;
     padding: 10px 32px;
@@ -239,6 +240,22 @@ ul {
 .advantage-list .item:last-child {
     margin-right: 0;
 }
+
+.advantage-img {
+    padding-top: 25px;
+    padding-bottom: 25px;
+    padding-right: 100px;
+    padding-left: 100px;
+    margin-top: 0;
+    margin-bottom: 30px;
+    background-color: var(--tertiary-bck-color);
+    border-radius: 4px;
+}
+
+.advantage-icon {
+    width: 70px;
+    height: 70px;
+} 
 
 .advantage-list .subtitle {
     margin-bottom: 10px;
@@ -291,8 +308,8 @@ ul {
     max-height: auto;
     margin-bottom: 0px;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
-        0px 1px 1px rgba(0, 0, 0, 0.14),
-        0px 2px 1px rgba(0, 0, 0, 0.2);
+    0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
     /* outline: 4px solid blueviolet; */
 }
@@ -321,6 +338,40 @@ ul {
     margin-bottom: 30px;
 }
 
+/* Постоянные клиенты */
+
+.clients-list {
+    display: flex;
+}
+
+.clients-list .clients-item {
+    width: 170px;
+    height: 92px;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    padding-left: 32px;
+    padding-right: 32px;
+    border: 1px solid #AFB1B8;
+    border-radius: 4px;
+}
+
+.clients-list .clients-item:not(:last-child) {
+    margin-right: 30px;
+}
+
+.clients-list.clients-icon:hover {
+    border-color: var(--accent-color);
+    fill: var(--accent-color);
+}
+
+.clients-icon {
+    width: 106px;
+    height: 60px;
+    fill: var(--icon-fill-color);
+}
+
+
+
 /* footer */
 
 /* logo */
@@ -338,7 +389,7 @@ ul {
     margin-top: 60px;
     margin-bottom: 60px;
     margin-left: 0;
-    margin-right: 0;
+    margin-right: 70px;
 }
 
 .footer .logo {
@@ -353,7 +404,6 @@ ul {
     font-style: normal;
     display: inline-block;
     
-    margin-bottom: 60px;
     /* outline: 4px solid blueviolet; */
 }
 
@@ -372,8 +422,10 @@ ul {
 }
 
 .join-thumb {
-    display: flex;
+    display: block;
     align-items: center;
+    margin-top: 72px;
+    margin-bottom: 100px;
 }
 
 .join-title {
@@ -416,6 +468,10 @@ ul {
 }
 
 .filters-list .link {
+    padding-top: 6px;
+    padding-bottom: 6px;
+    padding-left: 22px;
+    padding-right: 22px;
     border-radius: 4px;
 
     color: var(--title-tex-color);
