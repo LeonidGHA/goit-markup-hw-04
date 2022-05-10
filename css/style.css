@@ -183,14 +183,12 @@ ul {
     }
 
 .hero-title {
-    text-align: ;
-    color: var(--primary-bcg-color);
-
     margin-top: 0px;
     margin-bottom: 30px;
     margin-left: auto;
     margin-right: auto;
 
+    color: var(--primary-bcg-color);
     font-weight: 900;
     font-size: 44px;
     line-height: 1.36;
@@ -206,6 +204,7 @@ ul {
     text-align: center;
     margin-left: auto;
     margin-right: auto;
+    padding: 10px 32px;
 
     color: var(--primary-bcg-color);
     background-color: var(--accent-color);
@@ -442,6 +441,12 @@ ul {
     max-height: auto;
     margin-bottom: 0px;
     /* outline: 4px solid blueviolet; */
+}
+
+.project-card:hover,
+.project-card:focus {
+    border: 1px solid #EEEEEE;
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
 .project-card .card-image {
