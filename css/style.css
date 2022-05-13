@@ -374,27 +374,29 @@ ul {
 }
 
 .clients-company {
-    color: var(--icon-fill-color);
-    width: 106px;
-    height: 60px;
+    display: flex;
     padding: 16px 32px;
-    border: 1px solid #AFB1B8;
+    
+    color: var(--icon-fill-color);
+    border: 1px solid var(--icon-fill-color);
     border-radius: 4px;
 }
 
 .clients-icon {
+    width: 106px;
+    height: 60px;
     fill: currentColor;
-    outline: 2px solid blueviolet;
 }
 
 .clients-item:not(:last-child) {
     margin-right: 30px;
 }
 
-.clients-company .clients-icon:hover,
-.clients-company .clients-icon:focus {
+.clients-company:hover,
+.clients-company:focus {
+    color: var(--accent-color);
     border-color: var(--accent-color);
-    fill: var(--accent-color);
+    
 }
 
 /* footer */
