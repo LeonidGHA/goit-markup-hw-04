@@ -444,14 +444,13 @@ ul {
 
 .footer-thumb {
     display: flex;
+    padding-top: 60px;
+    padding-bottom: 60px;
 }
 
 .adress-thumb {
     display: block;
-    margin-top: 60px;
-    margin-bottom: 60px;
-    margin-left: 0;
-    margin-right: 70px;
+    
 }
 
 .footer .logo {
@@ -486,8 +485,7 @@ ul {
 .join-thumb {
     display: block;
     align-items: center;
-    margin-top: 72px;
-    margin-bottom: 100px;
+    
     margin-right: auto;
 }
 
