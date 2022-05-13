@@ -116,7 +116,8 @@ ul {
     margin-right: 50px;
 }
 
-.site-nav .link {
+.site-nav .link,
+.site-cont .link {
     display: block;
     padding-top: 32px;
     padding-bottom: 32px;
@@ -148,11 +149,35 @@ ul {
 }
 
 .contact.link {
-    display: block;
+    display: flex;
+    align-items: center;
+
     color: var(--primary-text-color);
     font-weight: 500;
     line-height: 1.14;
     letter-spacing: 0.02em;
+}
+
+.contact-mail {
+    display: flex;
+    height: 12px;
+    width: 16px;
+    margin-right: 10px;
+    fill: currentColor;
+}
+
+.contact-phone {
+    display: flex;
+    height: 16px;
+    width: 10px;
+    margin-right: 10px;
+    fill: currentColor;
+}
+
+.contact-header .contact {
+    display: flex;
+    padding-top: 32px;
+    padding-bottom: 32px;
 }
 
 .contact.link:hover,
@@ -344,33 +369,33 @@ ul {
     display: flex;
 }
 
-.clients-list .clients-item {
-    width: 170px;
-    height: 92px;
-    padding-top: 16px;
-    padding-bottom: 16px;
-    padding-left: 32px;
-    padding-right: 32px;
+.clients-item {
+    display: flex;
+}
+
+.clients-company {
+    color: var(--icon-fill-color);
+    width: 106px;
+    height: 60px;
+    padding: 16px 32px;
     border: 1px solid #AFB1B8;
     border-radius: 4px;
 }
 
-.clients-list .clients-item:not(:last-child) {
+.clients-icon {
+    fill: currentColor;
+    outline: 2px solid blueviolet;
+}
+
+.clients-item:not(:last-child) {
     margin-right: 30px;
 }
 
-.clients-list.clients-icon:hover {
+.clients-company .clients-icon:hover,
+.clients-company .clients-icon:focus {
     border-color: var(--accent-color);
     fill: var(--accent-color);
 }
-
-.clients-icon {
-    width: 106px;
-    height: 60px;
-    fill: var(--icon-fill-color);
-}
-
-
 
 /* footer */
 
@@ -426,6 +451,7 @@ ul {
     align-items: center;
     margin-top: 72px;
     margin-bottom: 100px;
+    margin-right: auto;
 }
 
 .join-title {
