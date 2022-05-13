@@ -331,7 +331,7 @@ ul {
     background: #FFFFFF;
     max-width: 370px;
     max-height: auto;
-    margin-bottom: 0px;
+    margin-bottom: 0;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
     0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -360,7 +360,51 @@ ul {
     line-height: 1.19;
     text-align: center;
 
+    margin-bottom: 16px;
+}
+
+.team-soc {
+    display: flex;
+    margin-left: 32px;
+    margin-right: 32px;
     margin-bottom: 30px;
+}
+
+.social-icon {
+    display: flex;
+    width: 44px;
+    height: 44px;
+    padding: 12px;
+    color: var(--icon-fill-color);
+    border-radius: 50%;
+
+    /* outline: 2px solid blueviolet; */
+}
+
+.social-icon:not(:last-child) {
+    margin-right: 10px;
+}
+
+.social-icon:hover,
+.social-icon:focus {
+    background-color: var(--accent-color);
+    color: var(--primary-bcg-color);
+}
+
+.instagram {
+    fill: currentColor;
+}
+
+.twitter {
+    fill: currentColor;
+}
+
+.facebook {
+    fill: currentColor;
+}
+
+.linkedin {
+    fill: currentColor;
 }
 
 /* Постоянные клиенты */
@@ -376,15 +420,14 @@ ul {
 .clients-company {
     display: flex;
     padding: 16px 32px;
-    
+    width: 170px;
+    height: 92px;
     color: var(--icon-fill-color);
     border: 1px solid var(--icon-fill-color);
     border-radius: 4px;
 }
 
 .clients-icon {
-    width: 106px;
-    height: 60px;
     fill: currentColor;
 }
 
@@ -461,6 +504,32 @@ ul {
     font-weight: 700;
     line-height: 1.14;
     text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+.footer-soc {
+    display: flex;
+}
+
+.footer-icon {
+    display: flex;
+    padding: 12px;
+    width: 44px;
+    height: 44px;
+    color: var(--primary-bcg-color);
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+
+    /* outline: 2px solid blueviolet; */
+}
+
+.footer-icon:not(:last-child) {
+    margin-right: 10px;
+}
+
+.footer-icon:hover,
+.footer-icon:focus {
+    background-color: var(--accent-color);
 }
 
 /* Main portfolio.html */
