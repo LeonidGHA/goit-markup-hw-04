@@ -450,7 +450,10 @@ ul {
 
 .adress-thumb {
     display: block;
-    
+}
+
+.adress-thumb:not(:last-child) {
+    margin-right: 70px;
 }
 
 .footer .logo {
@@ -487,7 +490,7 @@ ul {
     align-items: center;
     
     margin-right: auto;
-}
+    }
 
 .join-title {
     color: var(--primary-bcg-color);
