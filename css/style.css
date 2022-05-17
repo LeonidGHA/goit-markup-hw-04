@@ -310,31 +310,29 @@ ul {
     display: flex;
 }
 
-.team-list .item {
-    margin-right: 30px;
-}
-
-.team-list .item:last-child {
-    margin-right: 0;
-}
-
 .team-card {
     display: inline-block;
     background: #FFFFFF;
-    max-width: 370px;
-    max-height: auto;
-    margin-bottom: 0;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
-    0px 1px 1px rgba(0, 0, 0, 0.14),
-    0px 2px 1px rgba(0, 0, 0, 0.2);
+        0px 1px 1px rgba(0, 0, 0, 0.14),
+        0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
     /* outline: 4px solid blueviolet; */
 }
 
-.team-card.img {
+.team-card:not(:last-child) {
+    margin-right: 30px;
+}
+
+.team-photo {
     display: block;
     max-width: 100%;
     height: auto;
+}
+
+.team-description {
+    padding: 30px 10px;
+
 }
 
 .team-title {
@@ -343,60 +341,44 @@ ul {
     font-size: 16px;
     line-height: 1.18;
     text-align: center;
-
-    margin: 30px 0 10px;
+    margin-bottom: 10px;
 }
 
 .team-text {
     font-size: 16px;
     line-height: 1.19;
     text-align: center;
-
     margin-bottom: 16px;
 }
 
-.team-soc {
+.team-social {
     display: flex;
-    margin-left: 32px;
-    margin-right: 32px;
-    margin-bottom: 30px;
+    padding-left: 22px;
+    padding-right: 22px;
 }
 
-.social-icon {
-    display: flex;
-    width: 44px;
-    height: 44px;
-    padding: 12px;
-    color: var(--icon-fill-color);
-    border-radius: 50%;
-
-    /* outline: 2px solid blueviolet; */
-}
-
-.social-icon:not(:last-child) {
+.social-item:not(:last-child) {
     margin-right: 10px;
 }
 
-.social-icon:hover,
-.social-icon:focus {
+.social-link {
+    display: flex;
+    padding: 12px;
+    width: 44px;
+    height: 44px;
+    color: var(--icon-fill-color);
+    background: var(--primary-bcg-color);
+    border-radius: 50%;
+}
+
+.social-icon {
+    fill: currentColor;
+}
+
+.social-link:hover,
+.social-link:focus {
     background-color: var(--accent-color);
     color: var(--primary-bcg-color);
-}
-
-.instagram {
-    fill: currentColor;
-}
-
-.twitter {
-    fill: currentColor;
-}
-
-.facebook {
-    fill: currentColor;
-}
-
-.linkedin {
-    fill: currentColor;
 }
 
 /* Постоянные клиенты */
